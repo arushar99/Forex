@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <a href="@Url.Action("GetForex", "Home", new { id = "GBP-USD" })"><button type="button" class="btn btn-primary">
+    GBP/USD
+</button></a>
+
+<a href="@Url.Action("GetForex", "Home", new { id = "USD-JPY" })"><button type="button" class="btn btn-primary">USD/JPY</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "USD-CAD" })"> <button type="button" class="btn btn-primary">USD/CAD</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "GBP-JPY" })"><button type="button" class="btn btn-primary">GBP/JPY</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "USD-CHF" })"><button type="button" class="btn btn-primary">USD/CHF</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "EUR-USD" })"><button type="button" class="btn btn-primary">EUR/USD</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "EUR-GBP" })"><button type="button" class="btn btn-primary">EUR/GBP</button></a>
+<a href="@Url.Action("GetForex", "Home", new { id = "AUD-USD" })"><button type="button" class="btn btn-primary">AUD/USD</button></a>

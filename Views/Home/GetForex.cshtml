@@ -1,0 +1,35 @@
+﻿@using Forex.Models
+@model CurrenciesForList
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <h1> @Model.Symbol</h1>
+    
+    <h3> Simple </h3>
+
+
+
+    <p>@Html.LabelFor(x => x.MovingAverages.Moving_AVG5) : @Model.MovingAverages.Moving_AVG5 <br />
+    @Html.LabelFor(x => x.MovingAverages.Moving_AVG10) : @Model.MovingAverages.Moving_AVG10 <br />
+    @Html.LabelFor(x => x.MovingAverages.Moving_AVG20) : @Model.MovingAverages.Moving_AVG20 <br />
+    @Html.LabelFor(x => x.MovingAverages.Moving_AVG50) : @Model.MovingAverages.Moving_AVG50 <br />
+    @Html.LabelFor(x => x.MovingAverages.Moving_AVG100) : @Model.MovingAverages.Moving_AVG100 <br />
+    @Html.LabelFor(x => x.MovingAverages.Moving_AVG200) : @Model.MovingAverages.Moving_AVG200 </p>
+
+    <h3>Exponential</h3>
+
+    <p>@Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG5) : @Model.MovingAverages.Exp_Moving_AVG5 <br />
+    @Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG10) : @Model.MovingAverages.Exp_Moving_AVG10 <br />
+    @Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG20) : @Model.MovingAverages.Exp_Moving_AVG20 <br />
+    @Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG50) : @Model.MovingAverages.Exp_Moving_AVG50 <br />
+    @Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG100) : @Model.MovingAverages.Exp_Moving_AVG100 <br />
+    @Html.LabelFor(x => x.MovingAverages.Exp_Moving_AVG200) : @Model.MovingAverages.Exp_Moving_AVG200 </p>
+
+    </table>
+</html>
